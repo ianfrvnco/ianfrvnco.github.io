@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: static;
+  width: 100%;
+  top: 0;
+  background-color: rgb(58, 58, 58);
+}
+
+h2 {
+  text-align: left;
+  font-size: 75px;
+  font-weight: bold;
+  line-height: 50px;
+  justify-content: flex-start;
+  padding: 0 40px;
+  color: rgb(112, 112, 112);
+  background-color: rgb(58, 58, 58);
+  font-family: "Special Gothic Expanded One", cursive;
+  letter-spacing: 3px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: auto 40px;
+}
+
+a {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 40px;
+  font-size: 18px;
+  line-height: 50px;
+  text-decoration: none;
+  color: rgb(112, 112, 112);
+  background-color: rgb(58, 58, 58);
+  font-family: "Special Gothic Expanded One", cursive;
+  letter-spacing: 3px;
+}
