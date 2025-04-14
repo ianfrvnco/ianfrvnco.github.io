@@ -11,7 +11,7 @@ header {
 
 h2 {
   text-align: left;
-  font-size: 75px;
+  font-size: 65px;
   font-weight: bold;
   line-height: 50px;
   justify-content: flex-start;
@@ -29,7 +29,7 @@ nav {
   padding: auto 40px;
 }
 
-a {
+nav a {
   display: flex;
   justify-content: flex-end;
   padding: 0 40px;

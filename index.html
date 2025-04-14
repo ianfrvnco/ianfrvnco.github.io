@@ -1,75 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
-    <link rel="stylesheet" href="assets/css/footer.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
-    <title>Portfólio</title>
-  </head>
-  <body>
-    <header id="header">
-        <h2>Portfólio</h2>
-      <nav>
-        <ul>
-          <a href="#sobre">Sobre</a></li>
-          <a href="#projetos">Projetos</a></li>
-          <a href="#habilidades">Habilidades</a></li>
-          </ul>
-      </nav>
-    </header>
-    <main>
-        <img src="assets/img/Ornitorrinco.jpg" alt="Foto de perfil">
-      <section id="sobre">
-        <h1>Sobre</h1>
-        <p>Formado em Gastronomia na Unisinos atualmente estou em busca de uma mudança de área. <br>
-             Migrando para a área de tecnologia, a qual sempre foi uma opção para mim, iniciando estudos através de curso técnico presencial.<br>
-               Através do curso tive os primeiros contatos com desenvolvimento web, banco de dados e api.</p>
-      </section>
-      <section id="projetos">
-        <h1>Projetos</h1>
-        <table>
-            <tr>
-                <td> <img src="assets/img/Ornitorrinco.jpg" alt="html"> </td>
-                <td> <img src="assets/img/Ornitorrinco.jpg" alt="css"> </td>
-                <td> <img src="assets/img/Ornitorrinco.jpg" alt="js"> </td>
-            </tr>
-            <tr>
-                <td> <img src="assets/img/Ornitorrinco.jpg" alt="html"> </td>
-                <td> <img src="assets/img/Ornitorrinco.jpg" alt="css"> </td>
-                <td> <img src="assets/img/Ornitorrinco.jpg" alt="js"> </td>
-            </tr>
-        </table>
-      </section>
-      <section id="habilidades">
-        <h1>Habilidades</h1>
-        <table>
-            <tr>
-                <td> <img src="assets/img/html.svg" alt="html"> </td>
-                <td> <img src="assets/img/css.svg" alt="css"> </td>
-                <td> <img src="assets/img/JS.svg" alt="js"> </td>
-            </tr>
 
-            <tr>
-                <td> <img src="assets/img/java.svg" alt="git"> </td>
-                <td> <img src="assets/img/sql.svg" alt="github"> </td>
-                <td> <img src="assets/img/git.svg" alt="figma"> </td>
-            </tr>
-        </table>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  <title>Portfólio</title>
+</head>
 
-      </section>
-    </main> 
-    <footer>
-      <section id="contato">
-        <h1>Contato</h1>
-        <h5><img src="assets/img/email.svg" alt="email"> g6N5o@example.com</h5>
-        <img src="assets/img/whatsapp.svg" alt="telefone">
-      </section>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+<header id="header">
+  <h2>Portfólio</h2>
+  <nav>
+    <ul>
+      <a href="#sobre">Sobre</a></li>
+      <a href="#projetos">Projetos</a></li>
+      <a href="#habilidades">Habilidades</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <div class="background-perfil">
+    <img id="perfil" src="assets/img/Foto.jpg" alt="Foto de perfil">
+
+    <div class="gradient-perfil"></div>
+    <h3>Ian Machado Franco</h3>
+    <h4 id="idade">26 anos</h4>
+    <h4 id="situacao">Estudante de TI</h4>
+    <h4 id="cidade">Morador de Sapucaia do Sul</h4>
+
+  </div>
+  <section id="sobre">
+    <div class="background">
+      <h1>Sobre</h1>
+      <p>Ian Franco é formado em Gastronomia pela Universidade do Vale do Rio do Sinos,
+        mas atualmente busca uma mudança em sua área de atuação no mercado de trabalho.
+        Cursando o último ano do curso técnico em Tecnologia de Informação,
+        Ian tem construído sua base de conhecimento em desenvolvimento web, banco de dados e api,
+        buscando sempre expandir seu horizonte de estudo e ampliar sua experiência na área da tecnologia.
+        Além da constante busca por aprimoramento e inovação, Ian se destaca por sua organização e dedicação,
+        prezando, ainda, pela especialização contínua e compartilhamento de saberes. </p>
+    </div>
+  </section>
+  <section id="projetos">
+    <div class="background">
+      <h1>Projetos</h1>
+
+      <div class="grade_projetos">
+        <div class="container">
+          <span><a href="https://github.com/ianfrvnco/TrabalhoSignos">Trabalho Signos</a></span>
+        </div>
+
+        <div class="container">
+          <span><a href="https://github.com/ianfrvnco/trabalhoGameMetodos">Trabalho Métodos</a></span>
+        </div>
+        <div class="container">
+          <span><a href="https://github.com/ianfrvnco/trabalhoPerfumes">Trabalho JFrame</a></span>
+        </div>
+        <div class="container">
+          <span><a href="https://github.com/ianfrvnco/atividadeAnimal">Trabalho Métodos</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="habilidades">
+    <div class="background">
+      <h1>Habilidades</h1>
+      <table>
+        <tr>
+          <td> <img src="assets/img/html.svg" alt="html"> </td>
+          <td> <img src="assets/img/css.svg" alt="css"> </td>
+          <td> <img src="assets/img/JS.svg" alt="js"> </td>
+        </tr>
+
+        <tr>
+          <td> <img src="assets/img/java.svg" alt="git"> </td>
+          <td> <img src="assets/img/sql.svg" alt="github"> </td>
+          <td> <img src="assets/img/git.svg" alt="figma"> </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+<footer>
+  <section id="contato">
+    <h1>Contato</h1>
+    <div id="redes">
+      <h5><img src="assets/img/github.svg" alt="github">ianfrvnco</h5>
+      <h5><img src="assets/img/email.svg" alt="email"> g6N5o@example.com</h5>
+      <h5><img src="assets/img/whatsapp.svg" alt="telefone"> +51 99325-3296</h5>
+    </div>
+  </section>
+</footer>
+
 </html>
