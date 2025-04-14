@@ -29,6 +29,10 @@ nav {
   padding: auto 40px;
 }
 
+.botaoNav {
+  transition: transform 0.3s;
+}
+
 nav a {
   display: flex;
   justify-content: flex-end;
