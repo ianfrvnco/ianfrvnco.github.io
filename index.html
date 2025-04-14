@@ -11,30 +11,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
   <title>Portfólio</title>
+  <script src="assets/script.js"></script>
 </head>
 
 <header id="header">
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+  <dotlottie-player src="https://lottie.host/6a53456b-bc5c-46f0-95d2-429d8297d036/Chq5gmLMz7.lottie"
+    background="transparent" speed="0.3" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+
   <h2>Portfólio</h2>
   <nav>
     <ul>
-      <a href="#sobre">Sobre</a></li>
-      <a href="#projetos">Projetos</a></li>
-      <a href="#habilidades">Habilidades</a></li>
+      <a class="botaoNav" href="#sobre" 
+      onmouseover="mouseCimaScale(this)" onmouseout="mouseForaScale(this)">Sobre</a></li>
+      <a class="botaoNav" href="#projetos" 
+      onmouseover="mouseCimaScale(this)" onmouseout="mouseForaScale(this)">Projetos</a></li>
+      <a class="botaoNav" href="#habilidades" 
+      onmouseover="mouseCimaScale(this)" onmouseout="mouseForaScale(this)">Habilidades</a></li>
     </ul>
   </nav>
 </header>
 
 <body>
   <div class="background-perfil">
-    <img id="perfil" src="assets/img/Foto.jpg" alt="Foto de perfil">
-
+    <img id="perfil" onmouseover="mouseCima()" onmouseout="mouseFora()" src="assets/img/Foto.jpg" alt="Foto de perfil">
     <div class="gradient-perfil"></div>
+    <div>
     <h3>Ian Machado Franco</h3>
     <h4 id="idade">26 anos</h4>
     <h4 id="situacao">Estudante de TI</h4>
     <h4 id="cidade">Morador de Sapucaia do Sul</h4>
-
   </div>
+  </div>
+
   <section id="sobre">
     <div class="background">
       <h1>Sobre</h1>
@@ -47,31 +57,39 @@
         prezando, ainda, pela especialização contínua e compartilhamento de saberes. </p>
     </div>
   </section>
+
   <section id="projetos">
     <div class="background">
       <h1>Projetos</h1>
-
       <div class="grade_projetos">
         <div class="container">
           <span><a href="https://github.com/ianfrvnco/TrabalhoSignos">Trabalho Signos</a></span>
+          <p>Primeiro contato com Programação na disciplina de Lógica de Programação. Desenvolvido em Java.</p>
         </div>
-
         <div class="container">
           <span><a href="https://github.com/ianfrvnco/trabalhoGameMetodos">Trabalho Métodos</a></span>
+          <p>Atividade de Programação na disciplina de Lógica de Programação. Primeiro contato com métodos em Java.
+          </p>
         </div>
         <div class="container">
           <span><a href="https://github.com/ianfrvnco/trabalhoPerfumes">Trabalho JFrame</a></span>
+          <p>Utilizando Java Swing, através do NetBeans, foi desenvolvido para a disciplina de Programação Orientada a
+            Objetos.
+            Primeiro trabalho realizado com interface gráfica e objetos. </p>
         </div>
         <div class="container">
-          <span><a href="https://github.com/ianfrvnco/atividadeAnimal">Trabalho Métodos</a></span>
+          <span><a href="https://github.com/ianfrvnco/atividadeAnimal">Trabalho HTML/CSS</a></span>
+          <p>Relembrando HTML/CSS para a disciplina de Desenvolvimento Web I. Programação feita a partir do VSCode.</p>
         </div>
       </div>
     </div>
   </section>
+
   <section id="habilidades">
     <div class="background">
       <h1>Habilidades</h1>
       <table>
+
         <tr>
           <td> <img src="assets/img/html.svg" alt="html"> </td>
           <td> <img src="assets/img/css.svg" alt="css"> </td>
@@ -83,10 +101,10 @@
           <td> <img src="assets/img/sql.svg" alt="github"> </td>
           <td> <img src="assets/img/git.svg" alt="figma"> </td>
         </tr>
+
       </table>
     </div>
   </section>
-  <script src="script.js"></script>
 </body>
 
 <footer>
@@ -94,10 +112,11 @@
     <h1>Contato</h1>
     <div id="redes">
       <h5><img src="assets/img/github.svg" alt="github">ianfrvnco</h5>
-      <h5><img src="assets/img/email.svg" alt="email"> g6N5o@example.com</h5>
+      <h5><img src="assets/img/email.svg" alt="email"> ianfranco2@gmail.com</h5>
       <h5><img src="assets/img/whatsapp.svg" alt="telefone"> +51 99325-3296</h5>
     </div>
   </section>
+  
 </footer>
 
 </html>

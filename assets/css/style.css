@@ -13,6 +13,11 @@
   border-radius: 50%;
   position: absolute;
   z-index: 2;
+  transition: transform 1s ease;
+}
+
+.efeito-topo{
+  visibility: hidden;
 }
 
 .gradient-perfil{
@@ -124,6 +129,7 @@ h1 {
   font-family: "Special Gothic Expanded One", cursive;
 }
 
+
 p {
   line-height: 1.5;
   text-align: center;
@@ -202,6 +208,8 @@ h1, h2, h3, a {
 
 .container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin: 20px;
   width: 45%;
@@ -209,6 +217,12 @@ h1, h2, h3, a {
   position: relative;
   background-color: #1b191a;
   border-radius: 15px;
+}
+
+.container p {
+  text-align: center;
+  margin: 15px 20px 0 20px;
+  font-size: 20px;
 }
 
 .container:hover {
@@ -229,4 +243,9 @@ table img {
   height: 300px;
   border-radius: 40px;
   border: 3px solid rgb(0, 0, 0);
+}
+
+table img:hover {
+  box-shadow: 0 0 80px rgba(0, 0, 0, 1);
+  scale: 1.06;
 }
